@@ -21,10 +21,7 @@ addEventListener('fetch', event => {
       const newBody = body.replace(
         /<head>/i,  // Match the opening <head> tag
         `<head>
-          <meta property="og:title" content="${ogTitle}">
-          <meta property="og:description" content="${ogDescription}">
-          <meta property="og:image" content="${ogImage}">
-          <meta property="og:url" content="${ogUrl}">`
+          <meta property="og:title" content="${ogTitle}">`
       );
   
       // Return the modified response with the new body and headers
